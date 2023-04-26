@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon May 16 23:56:53 2022
+# Process ID: 22048
+# Current directory: C:/Users/SERKAN/Desktop/Bilgisayar Mimarisi Proje
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21952 C:\Users\SERKAN\Desktop\Bilgisayar Mimarisi Proje\riscvVivado.xpr
+# Log file: C:/Users/SERKAN/Desktop/Bilgisayar Mimarisi Proje/vivado.log
+# Journal file: C:/Users/SERKAN/Desktop/Bilgisayar Mimarisi Proje\vivado.jou
+# Running On: EXPER, OS: Windows, CPU Frequency: 3408 MHz, CPU Physical cores: 4, Host memory: 17141 MB
+#-----------------------------------------------------------
+start_gui
+open_project -part xc7k70tfbv676-1 {C:/Users/SERKAN/Desktop/Bilgisayar Mimarisi Proje/riscvVivado.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_top.tcl
+run all
+save_project_as Comp202_teslim {C:/Users/SERKAN/Desktop/Bilgisayar Mimarisi Proje/Comp202_teslim} -force
+save_wave_config {C:/Users/SERKAN/Desktop/Bilgisayar Mimarisi Proje/tb_top_behav.wcfg}
+add_files -fileset sim_1 -norecurse {{C:/Users/SERKAN/Desktop/Bilgisayar Mimarisi Proje/tb_top_behav.wcfg}}
+launch_runs synth_1 -jobs 4
+close_sim
